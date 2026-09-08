@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Craig Allen Potts | Resume</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="siteHeader">
+      <h1>Craig Allen Potts</h1>
+      <p>Data Engineer | IT Professional | Software Engineer</p>
+
+      <p>
+        Lewisburg, TN<br />
+        Email:
+        <a href="mailto:allenpotts13@gmail.com"> allenpotts13@gmail.com </a>
+      </p>
+    </header>
+
+    <nav>
+      <a href="resume.html">Resume</a>
+      <a href="coverletter.html">Cover Letter</a>
+      <a href="careergoals.html">Career Goals</a>
+    </nav>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2 class="section-title">Professional Summary</h2>
+
+        <p>
+          Data Engineer with a strong production and operations background,
+          transitioning from
+          <strong>14 years of IT support and infrastructure</strong>
+          into data engineering.
+        </p>
+
+        <p>
+          Experienced in building reliable data pipelines using
+          <span>Python</span> and <span>SQL</span>, with hands-on experience
+          across AWS and Azure cloud platforms.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section-title">Technical Skills</h2>
+        <ul>
+          <li><strong>Programming:</strong> Python, SQL, Java</li>
+          <li>
+            <strong>Databases:</strong> PostgreSQL, SQL Server, Snowflake,
+            DuckDB
+          </li>
+          <li><strong>Cloud Platforms:</strong> AWS, Azure</li>
+          <li>
+            <strong>Tools:</strong> Apache Airflow, Git, Docker, Github, FastAPI
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="section-title">Professional Experience</h2>
+
+        <article>
+          <h3>IT Support Technician Sr.</h3>
+
+          <p>
+            <strong>First Horizon Bank</strong><br />
+            <em>August 2018 - Present</em>
+          </p>
+
+          <ul>
+            <li>
+              Supported production systems across geographically distributed
+              branch locations, resolving incidents under SLA constraints.
+            </li>
+            <li>
+              Created and maintained internal documentation and knowledgebase
+              articles to standardize resolutions and reduce repeat incidents.
+            </li>
+            <li>
+              Assisted with testing and rollout of new tools, processes, and
+              system changes in production environments.
+            </li>
+            <li>
+              Troubleshoot workstation, network, and application issues that
+              have been passed up to the team from Tier 1 support.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Data Engineer Apprentice</h3>
+
+          <p>
+            <strong>Nashville Software School</strong><br />
+            <em>May 2025 - September 2025</em>
+          </p>
+
+          <ul>
+            <li>
+              Designed pipelines ingesting CSV, JSON, REST API, and SFTP data.
+            </li>
+            <li>
+              Built transformation layers using SQL and dbt-style modeling.
+            </li>
+            <li>Orchestrated workflows using Apache Airflow.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2 class="section-title">Selected Projects</h2>
+
+        <article>
+          <h3>Motorcycle Crash Data and Statistics</h3>
+
+          <p>
+            A bronze/gold lakehouse pipeline for motorcycle traffic-safety
+            analysis. Ingests FARS data over FTP plus public APIs and web
+            scraping, stages it in MinIO, transforms it with DuckDB, and
+            surfaces trends and KPIs through Metabase dashboards.
+          </p>
+
+          <p>
+            <a href="https://github.com/allenpotts13/data-engineering-capstone">
+              <strong>View Project on GitHub</strong>
+            </a>
+          </p>
+        </article>
+
+        <article>
+          <h3>Video Game Market Analysis (Power BI)</h3>
+          <p>
+            An interactive Power BI report styled as a game-style experience,
+            blending a public video game sales dataset with personal Xbox play
+            history for a "Player One Profile" section, complete with
+            gaming-themed KPIs and dynamic filtering.
+          </p>
+
+          <p>
+            <a
+              href="https://github.com/allenpotts13/video-game-market-analysis-power-bi"
+            >
+              <strong>View Project on GitHub</strong>
+            </a>
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2 class="section-title">Education</h2>
+
+        <ol>
+          <li>Nashville Software School - Data Engineering Bootcamp, 2025</li>
+          <li>
+            Nashville Software School - Software Engineering Bootcamp, 2022
+          </li>
+          <li>
+            Kaplan University - Associates of Science, Information Technology,
+            2013
+          </li>
+          <li>
+            Western Governors University - Bachelor/Masters of Science, Computer
+            Science, 2028
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="section-title">Technical Experience Overview</h2>
+
+        <table>
+          <caption>
+            Technical Experience by Category
+          </caption>
+
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Technology</th>
+              <th>Experience Area</th>
+              <th>Example of Usage</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Programming</td>
+              <td>Python</td>
+              <td>Data Engineering</td>
+              <td>ETL pipelines and validation</td>
+            </tr>
+
+            <tr>
+              <td>Database</td>
+              <td>DuckDB</td>
+              <td>Analytics</td>
+              <td>Motorcycle crash project</td>
+            </tr>
+
+            <tr>
+              <td>Cloud</td>
+              <td>AWS</td>
+              <td>Software Engineering</td>
+              <td>Lambda and DynamoDB applications</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer class="site-footer">
+      <p>
+        Portfolio:
+        <a href="https://allenpotts.com"> allenpotts </a>
+      </p>
+
+      <div id="currentDate"></div>
+    </footer>
+
+    <script>
+      const today = new Date();
+
+      document.getElementById("currentDate").textContent =
+        "Page viewed on: " + today.toLocaleDateString();
+
+      console.log("Craig Allen Potts resume page loaded successfully.");
+    </script>
+  </body>
+</html>

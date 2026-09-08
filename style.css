@@ -1,0 +1,172 @@
+/* ============================================================
+    Master Stylesheet
+    Utilized by resume.html, coverletter.htm, careergoals.html
+   ============================================================ */
+
+/*Universal selector*/
+* {
+    box-sizing:border-box;
+}
+
+/* Element selectors */
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #222222;
+    background-color: #e9edf1;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem 1rem;
+}
+
+h1, h2, h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #1f3a5f;
+    
+}
+
+a {
+    color: #1f3a5f;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+th, td {
+    border: 1px solid #999999;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+/*List-style properties*/
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+/*Pseudo-class selectors*/
+a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Page "cards" */
+header, nav, main, footer {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    padding: 1.5rem 2rem;
+    border-radius: 6px;
+}
+
+hr {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    border: none;
+    border-top: 1px solid #c7d7e6;
+}
+
+/* Descendant selectors */
+header p {
+    margin: 0.25rem 0;
+}
+
+nav {
+    background-color: #ffffff;
+    border: 1px solid #c7d7e6;
+    text-align: center;
+    padding: 0.75rem 2rem;
+}
+
+nav a {
+    margin: 0 0.5rem;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid #1f3a5f;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+main {
+    background-color: #ffffff;
+    border: 1px solid #c7d7e6;
+}
+
+main section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dddddd;
+}
+
+main section:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+table caption {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+/*ID selectors*/
+#siteHeader {
+    background-color: #eaf1f8;
+    border: 1px solid #c7d7e6;
+}
+
+#currentDate {
+    font-style: italic;
+}
+
+/* Class selectors */
+.highlight {
+    background-color: #fdf3d0;
+    padding: 0.1rem 0.35rem;
+    border: 1px solid #e0c96b;
+}
+
+.section-title {
+    border-bottom: 2px solid #1f3a5f;
+    padding-bottom: 0.25rem;
+}
+
+.profile-photo {
+    display: block;
+    border: 3px solid #1f3a5f;
+    padding: 4px;
+    background-color: #ffffff;
+    max-width: 200px;
+    margin: 0 auto 1rem auto;
+}
+
+audio, video {
+    display: block;
+    max-width: 100%;
+    margin: 0.5rem 0;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+}
+
+.site-footer {
+    background-color: #1f3a5f;
+    text-align: center;
+}
+
+.site-footer, .site-footer * {
+    color: #ffffff;
+}
